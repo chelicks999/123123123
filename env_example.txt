@@ -1,0 +1,69 @@
+# Telegram API credentials
+# Получите их на https://my.telegram.org/apps
+# 
+# ВАЖНО: Скопируйте этот файл в .env и заполните своими данными!
+
+# ============================================
+# ОДИН АККАУНТ (старый формат)
+# ============================================
+# Раскомментируйте, если используете один аккаунт:
+# TELEGRAM_API_ID=your_api_id_here
+# TELEGRAM_API_HASH=your_api_hash_here
+# TELEGRAM_PHONE=+1234567890
+# TELEGRAM_USERS_FILE=users.txt
+
+# ============================================
+# НЕСКОЛЬКО АККАУНТОВ (новый формат)
+# ============================================
+# Раскомментируйте и заполните для каждого аккаунта:
+
+# Первый аккаунт
+TELEGRAM_ACCOUNT_1_API_ID=your_api_id_1
+TELEGRAM_ACCOUNT_1_API_HASH=your_api_hash_1
+TELEGRAM_ACCOUNT_1_PHONE=+1234567890
+TELEGRAM_ACCOUNT_1_NAME=Account1
+TELEGRAM_ACCOUNT_1_USERS_FILE=users1.txt
+# TELEGRAM_ACCOUNT_1_PROXY=socks5://user:pass@host:port
+
+# Второй аккаунт
+TELEGRAM_ACCOUNT_2_API_ID=your_api_id_2
+TELEGRAM_ACCOUNT_2_API_HASH=your_api_hash_2
+TELEGRAM_ACCOUNT_2_PHONE=+0987654321
+TELEGRAM_ACCOUNT_2_NAME=Account2
+TELEGRAM_ACCOUNT_2_USERS_FILE=users2.txt
+# TELEGRAM_ACCOUNT_2_PROXY=http://host:port
+
+# Третий аккаунт (при необходимости)
+# TELEGRAM_ACCOUNT_3_API_ID=your_api_id_3
+# TELEGRAM_ACCOUNT_3_API_HASH=your_api_hash_3
+# TELEGRAM_ACCOUNT_3_PHONE=+1111111111
+# TELEGRAM_ACCOUNT_3_NAME=Account3
+# TELEGRAM_ACCOUNT_3_USERS_FILE=users3.txt
+
+# Четвертый аккаунт (при необходимости)
+# TELEGRAM_ACCOUNT_4_API_ID=your_api_id_4
+# TELEGRAM_ACCOUNT_4_API_HASH=your_api_hash_4
+# TELEGRAM_ACCOUNT_4_PHONE=+2222222222
+# TELEGRAM_ACCOUNT_4_NAME=Account4
+# TELEGRAM_ACCOUNT_4_USERS_FILE=users4.txt
+
+# Пятый аккаунт (при необходимости)
+# TELEGRAM_ACCOUNT_5_API_ID=your_api_id_5
+# TELEGRAM_ACCOUNT_5_API_HASH=your_api_hash_5
+# TELEGRAM_ACCOUNT_5_PHONE=+3333333333
+# TELEGRAM_ACCOUNT_5_NAME=Account5
+# TELEGRAM_ACCOUNT_5_USERS_FILE=users5.txt
+
+# ============================================
+# ПРИМЕЧАНИЯ:
+# ============================================
+# 1. Для каждого аккаунта нужен отдельный файл со списком пользователей
+# 2. По умолчанию используются файлы users1.txt, users2.txt, users3.txt и т.д.
+# 3. Можно указать свой файл через TELEGRAM_ACCOUNT_X_USERS_FILE
+# 4. NAME - опциональное поле, используется для идентификации аккаунта
+# 5. PROXY - опционально, отдельный прокси для каждого аккаунта
+#    Форматы: socks5://user:pass@host:port, http://host:port, host:port:user:pass
+#    Если не указать — аккаунт подключается напрямую без прокси
+# 6. Для одного аккаунта (старый формат) можно использовать TELEGRAM_PROXY
+# 7. Не забудьте скопировать этот файл в .env перед использованием!
+
